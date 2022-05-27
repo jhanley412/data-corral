@@ -3,9 +3,9 @@ from apiclient.discovery import build
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
 from oauth2client import tools
-import argparse
+#import argparse
 
- 
+
 def prepare_credentials(token_file_name):
     #parser = argparse.ArgumentParser(parents=[tools.argparser])
     #flags = parser.parse_args()
@@ -16,8 +16,8 @@ def prepare_credentials(token_file_name):
     #if credentials is None or credentials.invalid:
     #    credentials = tools.run_flow(FLOW, storage, flags)
     return credentials
- 
- 
+
+
 def initialize_service(token_file_name):
     # Creates an http object and authorize it using
     # the function prepare_creadentials()
@@ -26,6 +26,6 @@ def initialize_service(token_file_name):
     http = credentials.authorize(http)
     # Build the Analytics Service Object with the authorized http object
     return build('analytics', 'v3', http=http)
- 
+
 #if __name__ == '__main__':
 #    service = initialize_service(token_file_name)

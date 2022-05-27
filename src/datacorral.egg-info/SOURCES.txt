@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/datacorral/__init__.py
+src/datacorral/analytics_service_object.py
+src/datacorral/definitions.py
+src/datacorral/google.py
+src/datacorral.egg-info/PKG-INFO
+src/datacorral.egg-info/SOURCES.txt
+src/datacorral.egg-info/dependency_links.txt
+src/datacorral.egg-info/requires.txt
+src/datacorral.egg-info/top_level.txt

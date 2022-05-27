@@ -5,11 +5,10 @@ from googleapiclient.errors import HttpError
 from datacorral import definitions
 from datacorral import analytics_service_object
 
-class GoogleAnalytics:
+class Analytics:
 
     def __init__(self, token_file_name):
         self.ga_sites_dict = definitions.SITES
-        self.saved_reports_dict = definitions.REPORTS
         self.token_file_name = token_file_name
 
         print('Initializing API helper')
